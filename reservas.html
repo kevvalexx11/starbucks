@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reserva una mesa o un espacio de reunión en Starbucks.">
+  <title>Reservas | Starbucks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Starbucks, ir al inicio">
+      <img src="icono.svg" alt="" width="44" height="44">
+      <span>Starbucks</span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir o cerrar el menú">
+    <label for="nav-toggle" class="hamburger" aria-hidden="true"><span></span></label>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="reservas.html" class="active" aria-current="page">Reservas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="login.html" class="nav-login">Iniciar Sesión</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="page-hero">
+  <div class="container">
+    <h1>Reserva tu espacio</h1>
+    <p>Aparta una mesa para conversar o una zona tranquila para trabajar o reunirte.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container two-col">
+    <aside class="card side-info">
+      <h2>Antes de reservar</h2>
+      <ul class="check-list">
+        <li>Reservas de 1 a 10 personas.</li>
+        <li>Conservamos tu mesa hasta 15 minutos después de la hora elegida.</li>
+        <li>Zona de Trabajo: ideal para reuniones con laptop y enchufes disponibles.</li>
+        <li>Terraza: sujeta al clima del día.</li>
+      </ul>
+    </aside>
+
+    <form class="card form-card" id="reserva-form" action="#" method="post">
+      <h2>Datos de la reserva</h2>
+      <div class="field">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana López" autocomplete="name" minlength="3" maxlength="60" pattern="[A-Za-zÁÉÍÓÚÜÑáéíóúüñ' .\-]{3,60}" title="Solo letras y espacios, entre 3 y 60 caracteres" required>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="r-email">Correo electrónico</label>
+          <input type="email" id="r-email" name="email" placeholder="tucorreo@ejemplo.com" autocomplete="email" inputmode="email" maxlength="100" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Escribe un correo válido, por ejemplo: tucorreo@ejemplo.com" required>
+        </div>
+        <div class="field">
+          <label for="r-tel">Teléfono</label>
+          <input type="tel" id="r-tel" name="telefono" placeholder="7000-0000" autocomplete="tel" inputmode="tel" pattern="[0-9]{4}-?[0-9]{4}" title="8 dígitos, con o sin guion. Ejemplo: 7000-0000" required>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="fecha">Fecha</label>
+          <input type="date" id="fecha" name="fecha" min="2026-11-06" max="2027-11-06" aria-describedby="fecha-hint" required>
+          <small class="hint" id="fecha-hint">Desde hoy hasta un año adelante.</small>
+        </div>
+        <div class="field">
+          <label for="hora">Hora</label>
+          <input type="time" id="hora" name="hora" min="06:30" max="20:30" step="900" aria-describedby="hora-hint" required>
+          <small class="hint" id="hora-hint">Entre 6:30 y 20:30.</small>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="personas">Número de personas</label>
+          <input type="number" id="personas" name="personas" min="1" max="10" step="1" value="2" inputmode="numeric" aria-describedby="personas-hint" required>
+          <small class="hint" id="personas-hint">De 1 a 10 personas.</small>
+        </div>
+        <div class="field">
+          <label for="zona">Zona del local</label>
+          <select id="zona" name="zona" required>
+            <option value="" disabled selected>Selecciona una zona</option>
+            <option value="terraza">Terraza</option>
+            <option value="salon">Salón Principal</option>
+            <option value="trabajo">Zona de Trabajo</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="notas">Comentarios (opcional)</label>
+        <textarea id="notas" name="notas" rows="3" maxlength="300" placeholder="Celebraciones, necesidades de accesibilidad, etc."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Confirmar reserva</button>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand brand-light" href="index.html"><img src="icono.svg" alt="" width="40" height="40"><span>Starbucks</span></a>
+      <p>Café de origen responsable y un tercer lugar para ti: ni casa, ni trabajo.</p>
+    </div>
+    <div>
+      <h3>Explora</h3>
+      <ul>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Horario</h3>
+      <p>Lunes a viernes: 6:30 – 21:00<br>Sábado y domingo: 7:30 – 21:00</p>
+    </div>
+  </div>
+  <p class="copyright">&copy; 2026 Starbucks.</p>
+</footer>
+
+<script>
+  document.getElementById('reserva-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Evita recargar la página
+
+    const nombre = document.getElementById('nombre').value;
+    alert(`¡Reserva confirmada con éxito, ${nombre}! Te esperamos pronto.`);
+    
+    this.reset(); // Limpia los campos del formulario tras confirmar
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Accede a tu cuenta de Starbucks.">
+  <title>Iniciar Sesión | Starbucks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Starbucks, ir al inicio">
+      <img src="icono.svg" alt="" width="44" height="44">
+      <span>Starbucks</span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir o cerrar el menú">
+    <label for="nav-toggle" class="hamburger" aria-hidden="true"><span></span></label>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="login.html" class="nav-login active" aria-current="page">Iniciar Sesión</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="login-section">
+  <!-- Se cambió action="#" por action="index.html" -->
+  <form class="card form-card login-card" action="index.html" method="get">
+    <img src="icono.svg" alt="" width="72" height="72" class="login-logo">
+    <h1>Inicia sesión</h1>
+    <p class="muted">Accede para reservar y guardar tus favoritos.</p>
+    <div class="field">
+      <label for="l-email">Correo electrónico</label>
+      <input type="email" id="l-email" name="email" autocomplete="email" inputmode="email" autocapitalize="off" spellcheck="false" maxlength="100" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Escribe un correo válido, por ejemplo: tucorreo@ejemplo.com" placeholder="tucorreo@ejemplo.com" required>
+    </div>
+    <div class="field">
+      <label for="l-pass">Contraseña</label>
+      <input type="password" id="l-pass" name="password" autocomplete="current-password" placeholder="Tu contraseña" minlength="8" maxlength="64" aria-describedby="l-pass-hint" title="La contraseña debe tener al menos 8 caracteres" required>
+      <small class="hint" id="l-pass-hint">Mínimo 8 caracteres.</small>
+    </div>
+    <div class="field check-row">
+      <input type="checkbox" id="l-remember" name="remember" value="1">
+      <label for="l-remember">Mantener sesión iniciada</label>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button>
+    <p class="form-links"><a href="#">¿Olvidaste tu contraseña?</a><br>¿Aún no tienes cuenta? <a href="#">Crear cuenta</a></p>
+  </form>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand brand-light" href="index.html"><img src="icono.svg" alt="" width="40" height="40"><span>Starbucks</span></a>
+      <p>Café de origen responsable y un tercer lugar para ti: ni casa, ni trabajo.</p>
+    </div>
+    <div>
+      <h3>Explora</h3>
+      <ul>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Horario</h3>
+      <p>Lunes a viernes: 6:30 – 21:00<br>Sábado y domingo: 7:30 – 21:00</p>
+    </div>
+  </div>
+  <p class="copyright">&copy; 2026 Starbucks.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menú digital de Starbucks: bebidas calientes, bebidas frías y repostería.">
+  <title>Menú | Starbucks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Starbucks, ir al inicio">
+      <img src="icono.svg" alt="" width="44" height="44">
+      <span>Starbucks</span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir o cerrar el menú">
+    <label for="nav-toggle" class="hamburger" aria-hidden="true"><span></span></label>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html" class="active" aria-current="page">Menú</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="login.html" class="nav-login">Iniciar Sesión</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="page-hero">
+  <div class="container">
+    <h1>Nuestro menú</h1>
+    <p>Bebidas y bocadillos preparados al momento. Precios en dólares (USD).</p>
+    <ul class="chips">
+      <li><a href="#calientes">Bebidas calientes</a></li>
+      <li><a href="#frias">Bebidas frías</a></li>
+      <li><a href="#reposteria">Repostería y comida</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="calientes">
+  <div class="container">
+    <h2 class="section-title">Bebidas calientes</h2>
+    <div class="grid grid-products">
+      <article class="card product-card">
+        <div class="card-media"><img src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/Latte_0.jpeg" alt="Caffè Latte" loading="lazy" width="400" height="300"></div>
+        <div class="card-body"><h3>Caffè Latte</h3><p>Espresso con leche vaporizada y espuma ligera.</p><p class="price">$4.25</p></div>
+      </article>
+      <article class="card product-card">
+        <div class="card-media"><img src="https://www.starbucks.co.nz/content/menu/0361867001646122985.jpg?width=304" alt="Cappuccino" loading="lazy" width="400" height="300"></div>
+        <div class="card-body"><h3>Cappuccino</h3><p>Espresso, leche caliente y una generosa capa de espuma.</p><p class="price">$4.00</p></div>
+      </article>
+      <article class="card product-card">
+        <div class="card-media"><img src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20211029_CaramelMacchiato.jpg?impolicy=1by1_wide_topcrop_630" alt="Caramel Macchiato" loading="lazy" width="400" height="300"></div>
+        <div class="card-body"><h3>Caramel Macchiato</h3><p>Vainilla, leche vaporizada, espresso y caramelo por encima.</p><p class="price">$4.75</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft" id="frias">
+  <div class="container">
+    <h2 class="section-title">Bebidas frías</h2>
+    <div class="grid grid-products">
+      <article class="card product-card">
+        <div class="card-media"><img src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/Cold-Brew---Feb-2023.jpeg" alt="Cold Brew" loading="lazy" width="400" height="300"></div>
+        <div class="card-body"><h3>Cold Brew</h3><p>Café infusionado en frío, servido con hielo.</p><p class="price">$4.50</p></div>
+      </article>
+      <article class="card product-card">
+        <div class="card-media"><img src="https://www.starbucks.es/sites/starbucks-es-pwa/files/styles/c10_2_col_text_560x467/public/2021-11/Caramel%20Frappuccino%C2%AE%20.jpeg.webp?h=8a7fc05e&itok=grec2Qmg" alt="Frappuccino de caramelo" loading="lazy" width="400" height="300"></div>
+        <div class="card-body"><h3>Frappuccino de caramelo</h3><p>Café helado licuado con caramelo y crema batida.</p><p class="price">$5.25</p></div>
+      </article>
+      <article class="card product-card">
+        <div class="card-media"><img src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/Iced-Matcha-Tea-Latte.jpeg" alt="Iced Matcha Latte" loading="lazy" width="400" height="300"></div>
+        <div class="card-body"><h3>Iced Matcha Latte</h3><p>Té matcha con leche fría y hielo, ligeramente dulce.</p><p class="price">$5.00</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="reposteria">
+  <div class="container">
+    <h2 class="section-title">Repostería y comida</h2>
+    <div class="grid grid-products">
+      <article class="card product-card">
+        <div class="card-media"><img src="https://starbuckspr.com/wp-content/uploads/2022/12/Butter-Croissant-768x768-1.jpg" alt="Croissant de mantequilla" loading="lazy" width="400" height="300"></div>
+        <div class="card-body"><h3>Croissant de mantequilla</h3><p>Hojaldrado y dorado, horneado cada mañana.</p><p class="price">$2.95</p></div>
+      </article>
+      <article class="card product-card">
+        <div class="card-media"><img src="https://starbuckspr.com/wp-content/uploads/2022/12/Blueberry-Muffin-768x768-1.jpg" alt="Muffin de arándanos" loading="lazy" width="400" height="300"></div>
+        <div class="card-body"><h3>Muffin de arándanos</h3><p>Suave por dentro, con arándanos y azúcar crujiente.</p><p class="price">$3.25</p></div>
+      </article>
+      <article class="card product-card">
+        <div class="card-media"><img src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/Carrot-Cake_0.jpeg" alt="Pastel de zanahoria" loading="lazy" width="400" height="300"></div>
+        <div class="card-body"><h3>Pastel de zanahoria</h3><p>Rebanada húmeda con nueces y betún de queso crema.</p><p class="price">$4.10</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand brand-light" href="index.html"><img src="icono.svg" alt="" width="40" height="40"><span>Starbucks</span></a>
+      <p>Café de origen responsable y un tercer lugar para ti: ni casa, ni trabajo.</p>
+    </div>
+    <div>
+      <h3>Explora</h3>
+      <ul>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Horario</h3>
+      <p>Lunes a viernes: 6:30 – 21:00<br>Sábado y domingo: 7:30 – 21:00</p>
+    </div>
+  </div>
+  <p class="copyright">&copy; 2026 Starbucks.</p>
+</footer>
+</body>
+</html>
